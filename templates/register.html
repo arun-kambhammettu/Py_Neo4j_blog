@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+	<section id="content">
+		<form action="{{ url_for('register') }}" method="post">
+			<p><i>Register for a free account now !!</i></p><br>
+			<div>
+				<input type="text" placeholder="Username" id="username" name="username" />
+			</div>
+			<div>
+				<input type="password" placeholder="Password" id="password" name="password"/>
+			</div>
+			<div>
+				<input type="submit" value="Register" />
+			</div>
+		</form><!-- form -->
+
+	</section><!-- content -->
+</div><!-- container -->
+{% endblock %}
+
